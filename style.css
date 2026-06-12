@@ -4,25 +4,34 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
-
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background-color: #0a0a0a;
     padding: 20px 40px;
     border-bottom: 3px solid #1c69d4;
 }
 
-nav h2 {
+nav h1 {
+    margin: 0 0 15px 0;
+    font-size: 36px;
+}
+
+.stick {
+    color: #1c69d4;
+}
+
+.fix {
     color: #e2231a;
-    margin: 0;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -32,4 +41,95 @@ nav a {
 
 nav a:hover {
     color: #1c69d4;
+    border-bottom: 2px solid #e2231a;
+    padding-bottom: 5px;
+}
+
+.services {
+    padding: 60px 40px;
+    text-align: center;
+}
+.service-card {
+    display: inline-block;
+    width: 280px;
+    background-color: #0a0a0a;
+    border: 2px solid #1c69d4;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 20px;
+    vertical-align: top;
+    text-decoration: none;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: #e2231a;
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.card-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.service-card:hover .card-info {
+    max-height: 100px;
+}
+
+.card-info p {
+    color: #cccccc;
+    font-size: 14px;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.about-preview {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.about-preview h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-preview p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.about-preview a {
+    display: inline-block;
+    background-color: #e2231a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+.about-preview a:hover {
+    background-color: #1c69d4;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    color: #999999;
 }
